@@ -51,12 +51,13 @@ def fetch_withdrawals(db_path=DB_PATH):
     connection.close()
     return [dict(row) for row in rows]
 
-
+#hello
+#aloo
 def main():
     withdrawals = fetch_withdrawals()
     flagged = flag_large_withdrawals(withdrawals)
 
-    print("NBK BRANCH DAILY REPORT")
+    print("NBK BRANCH DAILY REPORT 2")
     print("Withdrawals at or above " + format_kwd(FLAG_THRESHOLD_KWD))
     print("")
 
